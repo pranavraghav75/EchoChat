@@ -96,7 +96,3 @@ EchoAI is built on a Retrieval-Augmented Generation (RAG) framework, combining a
 - Built with [FastAPI](https://fastapi.tiangolo.com/) and [Streamlit](https://streamlit.io/).
 - Data sourced from [Wikipedia](https://www.wikipedia.org/), [TMZ](https://www.tmz.com/), [Reddit](https://www.reddit.com/), [Google News](https://news.google.com/), and [YouTube](https://www.youtube.com/).
 - Personality analysis powered by OpenAI's GPT-4o-mini model.
-
----
-
-Happy coding and enjoy chatting with your favorite celebrities with EchoAI!

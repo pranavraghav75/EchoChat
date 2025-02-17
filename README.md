@@ -4,7 +4,7 @@ EchoAI is an AI-powered chat application that lets you have dynamic, in-depth co
 
 ---
 
-## 🔥 Features
+## 🦅 Features
 
 - **Celebrity Persona Emulation:** Engage with a simulated version of a celebrity using their real-world data.
 - **Multi-Source Data Aggregation:** Gathers information from Wikipedia, TMZ, Reddit, Google News, and YouTube to build comprehensive profiles.

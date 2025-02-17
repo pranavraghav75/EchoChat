@@ -1,10 +1,4 @@
-Below is an updated GitHub README with a tech stack section and added emojis. You can paste it directly into your repo's README section on GitHub:
-
----
-
 # 🌟 EchoAI: Celebrity Chat with Personalized AI
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 EchoAI is an AI-powered chat application that lets you have dynamic, in-depth conversations with simulated versions of your favorite celebrities. By aggregating and analyzing data from multiple sources—such as YouTube transcripts, Wikipedia, TMZ, Reddit, and Google News—EchoAI crafts a detailed personality profile and speaking style guide for each celebrity. The result is a conversational experience where the AI authentically embodies the celebrity’s unique voice and mannerisms.
 

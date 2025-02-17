@@ -13,43 +13,6 @@ def reset_session_state():
 def main():
     st.set_page_config(page_title="EchoAI", layout="wide")
     
-    st.markdown("""
-        <style>
-            .header-buttons {
-                position: fixed;
-                top: 1rem;
-                right: 8rem;
-                z-index: 999999;
-                display: flex;
-                gap: 1rem;
-                align-items: center;
-            }
-            .github-button {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #ffffff;
-                padding: 0.5rem;
-                border: 1px solid #ddd;
-                border-radius: 0.5rem;
-                cursor: pointer;
-                transition: background-color 0.2s;
-            }
-            .github-button:hover {
-                background-color: #f0f0f0;
-            }
-            .github-button img {
-                width: 24px;
-                height: 24px;
-            }
-        </style>
-        <div class="header-buttons">
-            <a href="https://github.com/pranavraghav75/WWTS" target="_blank" class="github-button">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"/>
-            </a>
-        </div>
-    """, unsafe_allow_html=True)
-    
     if 'session_id' not in st.session_state:
         st.session_state.session_id = None
     if 'chat_history' not in st.session_state:

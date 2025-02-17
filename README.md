@@ -4,7 +4,7 @@ EchoAI is an AI-powered chat application that lets you have dynamic, in-depth co
 
 ---
 
-## 🦅 Features
+## 💥 Features
 
 - **Celebrity Persona Emulation:** Engage with a simulated version of a celebrity using their real-world data.
 - **Multi-Source Data Aggregation:** Gathers information from Wikipedia, TMZ, Reddit, Google News, and YouTube to build comprehensive profiles.
@@ -50,6 +50,12 @@ This opens the EchoChat interface in your default web browser.
 
 ---
 
+## 🧩 Architecture
+
+EchoAI is built on a Retrieval-Augmented Generation (RAG) framework, seamlessly combining a vector-based retrieval system (ChromaDB) with an LLM-based generative model (GPT-4o-mini). This architecture enables the AI to pull in up-to-date contextual data and generate responses that are both highly relevant and true to the celebrity's persona. In essence, it fuses traditional information retrieval with the creative capabilities of large language models for a truly immersive conversational experience.
+
+---
+
 ## 🤖 How It Works
 
 1. **Session Initialization:**  
@@ -85,7 +91,7 @@ This opens the EchoChat interface in your default web browser.
 
 ---
 
-## 🙏 Acknowledgements
+## 🤝 Acknowledgements
 
 - Built with [FastAPI](https://fastapi.tiangolo.com/) and [Streamlit](https://streamlit.io/).
 - Data sourced from [Wikipedia](https://www.wikipedia.org/), [TMZ](https://www.tmz.com/), [Reddit](https://www.reddit.com/), [Google News](https://news.google.com/), and [YouTube](https://www.youtube.com/).

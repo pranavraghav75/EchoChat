@@ -1,0 +1,11 @@
+.env
+virtual/
+venv/
+new/
+enviroment/
+Create/
+chroma_persistent_storage/
+celebrity-chatbot/
+a/
+#/
+__pycache__/

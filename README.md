@@ -52,7 +52,7 @@ This opens the EchoChat interface in your default web browser.
 
 ## 🧩 Architecture
 
-EchoAI is built on a Retrieval-Augmented Generation (RAG) framework, seamlessly combining a vector-based retrieval system (ChromaDB) with an LLM-based generative model (GPT-4o-mini). This architecture enables the AI to pull in up-to-date contextual data and generate responses that are both highly relevant and true to the celebrity's persona. In essence, it fuses traditional information retrieval with the creative capabilities of large language models for a truly immersive conversational experience.
+EchoAI is built on a Retrieval-Augmented Generation (RAG) framework, combining a vector-based retrieval system (ChromaDB) with an LLM-based generative model (GPT-4o-mini). This architecture enables the AI to pull in up-to-date contextual data and generate responses that are both highly relevant and true to the celebrity's persona. In essence, it fuses traditional information retrieval with the creative capabilities of large language models for a truly immersive conversational experience.
 
 ---
 

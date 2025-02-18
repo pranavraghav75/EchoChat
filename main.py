@@ -8,7 +8,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 import chromadb
 from chromadb.utils import embedding_functions
-import tweepy
 import asyncpraw
 import nltk
 nltk.download('punkt')
@@ -460,15 +459,34 @@ Respond to the user's message exactly as you would in a real interview or conver
     )
 
     answer = response.choices[0].message.content.strip()
-    session_data["conversation"].append({"user": user_message, "bot": answer})
-    interaction_text = f"User: {user_message}\nBot: {answer}"
+
+    sentences = sent_tokenize(answer)
+    truncated_answer = ""
+    for sentence in sentences:
+        if len(truncated_answer) + len(sentence) <= 150:
+            truncated_answer += " " + sentence
+        else:
+            break
+    truncated_answer = truncated_answer.strip()
+
+    session_data["conversation"].append({"user": user_message, "bot": truncated_answer})
+    interaction_text = f"User: {user_message}\nBot: {truncated_answer}"
     interaction_embedding = openai_ef([interaction_text])[0]
     collection.upsert(
         ids=[str(uuid.uuid4())],
         documents=[interaction_text],
         embeddings=[interaction_embedding]
     )
-    return {"answer": answer}
+    return {"answer": truncated_answer}
+    # session_data["conversation"].append({"user": user_message, "bot": answer})
+    # interaction_text = f"User: {user_message}\nBot: {answer}"
+    # interaction_embedding = openai_ef([interaction_text])[0]
+    # collection.upsert(
+    #     ids=[str(uuid.uuid4())],
+    #     documents=[interaction_text],
+    #     embeddings=[interaction_embedding]
+    # )
+    # return {"answer": answer}
 
 @app.post("/cleanup_session")
 async def cleanup_session(session_id: str):
